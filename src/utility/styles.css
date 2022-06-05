@@ -5,12 +5,13 @@
 :root {
   --tertiary: #008190;
   --tertiary--light: #1b97a5;
-  --grey: #4d4b4b;
+  --grey: #b3adad8a;
   --white: #ffffff;
   --green: green;
   --red: rgb(177, 3, 32);
-  --red--light: rgb(124, 2, 22);
+  --red--dark: rgb(124, 2, 22);
   --yellow: rgb(255, 191, 29);
+  --button: rgb(255, 174, 0);
 }
 
 html {

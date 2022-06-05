@@ -2,7 +2,7 @@ import "./navbar.css";
 import { Drawer } from "./Drawer";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { HOMEPAGE, ABOUT, EXPLORE } from "../../utility/routes";
+import { HOMEPAGE } from "../../utility/routes";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -23,10 +23,10 @@ export function Navbar() {
 
         <section className="end">
           <section className="end__links">
-            <Link to={ABOUT} className="end__link">
+            <Link to={HOMEPAGE} className="end__link">
               About Us
             </Link>
-            <Link to={EXPLORE} className="end__link">
+            <Link to={HOMEPAGE} className="end__link">
               Explore
             </Link>
             <span className="end__link citites">

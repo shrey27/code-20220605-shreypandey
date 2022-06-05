@@ -1,6 +1,6 @@
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import { HOMEPAGE, ABOUT, EXPLORE } from "../../utility/routes";
+import { HOMEPAGE } from "../../utility/routes";
 
 export function Drawer({ open, setOpen }) {
   return (
@@ -18,10 +18,10 @@ export function Drawer({ open, setOpen }) {
           </h1>
           <hr />
           <section className="flex-st-ct flex-vertical">
-            <Link to={ABOUT} className="drawer__links ">
+            <Link to={HOMEPAGE} className="drawer__links ">
               About Us
             </Link>
-            <Link to={EXPLORE} className="drawer__links ">
+            <Link to={HOMEPAGE} className="drawer__links ">
               Explore
             </Link>
             <span className="drawer__links ">Call</span>

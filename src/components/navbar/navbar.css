@@ -13,6 +13,11 @@
 /* Navbar Styling */
 .navbar {
   background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
 }
 .box__image {
   height: 6rem;
@@ -31,14 +36,31 @@
 .end__link {
   font-size: 1rem;
   margin: 0 1rem;
+  font-weight: 700;
+  padding: 0.55rem 0.55rem;
+  border-radius: 5px;
+  color: var(--white);
 }
 .hamburger {
   display: inline-flex;
+  color: var(--white);
+  background-image: linear-gradient(
+    to right,
+    #ff7400,
+    #ff9600,
+    #ffb700,
+    #ffd800,
+    #fff900
+  );
+  padding: 1rem 0.25rem;
+  border-radius: 50%;
 }
 .call {
-  border: 2px solid black;
+  border: 2px solid var(--white);
   border-radius: 5px;
   padding: 0.5rem 1.25rem;
+  color: var(--white);
+  font-weight: 600;
 }
 .citites {
   cursor: pointer;
