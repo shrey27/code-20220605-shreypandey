@@ -1,0 +1,60 @@
+@import "../../utility/styles.css";
+
+/* Drawer Styling */
+.drawer__content {
+  width: 50%;
+  z-index: 100;
+}
+.drawer__links {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0.5rem;
+}
+/* Navbar Styling */
+.navbar {
+  background: transparent;
+}
+.box__image {
+  height: 6rem;
+  width: auto;
+  object-fit: contain;
+}
+.end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 1rem;
+}
+.end__links {
+  display: none;
+}
+.end__link {
+  font-size: 1rem;
+  margin: 0 1rem;
+}
+.hamburger {
+  display: inline-flex;
+}
+.call {
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 0.5rem 1.25rem;
+}
+.citites {
+  cursor: pointer;
+}
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 1.25rem;
+  }
+  .drawer__content {
+    width: 25%;
+  }
+  .hamburger {
+    display: none;
+  }
+  .end__links {
+    display: inline-flex;
+    align-items: center;
+  }
+}
