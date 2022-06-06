@@ -5,8 +5,8 @@
 :root {
   --tertiary: #008190;
   --tertiary--light: #1b97a5;
-  --grey: #b3adad8a;
-  --white: #ffffff;
+  --grey: #b3adadb7;
+  --white: #f8f4f4;
   --green: green;
   --red: rgb(177, 3, 32);
   --red--dark: rgb(124, 2, 22);
@@ -25,6 +25,8 @@ body {
   width: 100%;
   height: 100vh;
   overflow-x: hidden;
+  font-family: "Exo 2";
+  font-style: normal;
 }
 .shadow {
   box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
