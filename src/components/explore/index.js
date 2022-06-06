@@ -7,7 +7,6 @@ export function Explore({ form, setDetails }) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    console.log(form);
     let temp = [...exploreData];
     if (form.city && form.city !== "Select your city") {
       temp = temp.filter((item) => item.city === form.city);
@@ -23,7 +22,6 @@ export function Explore({ form, setDetails }) {
     }
     setData([...temp]);
     setDetails(defaultForm);
-    
   }, [form, setDetails]);
 
   return (

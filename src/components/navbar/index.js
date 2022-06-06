@@ -1,8 +1,6 @@
 import "./navbar.css";
 import { Drawer } from "./Drawer";
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { HOMEPAGE } from "../../utility/routes";
 
 export function Navbar() {
   const [open, setOpen] = useState(false);
@@ -16,9 +14,9 @@ export function Navbar() {
       <Drawer open={open} setOpen={setOpen} />
       <nav className="navbar xs-s border--btm">
         <section>
-          <Link to={HOMEPAGE} className="link__style">
+          <a href="/" className="link__style">
             <img className="box__image" src="logo.png" alt="logo" />
-          </Link>
+          </a>
         </section>
         {/* eslint-disable-next-line */}
         <section className="end">

@@ -1,6 +1,4 @@
 import "./navbar.css";
-import { Link } from "react-router-dom";
-import { HOMEPAGE } from "../../utility/routes";
 
 export function Drawer({ open, setOpen }) {
   return (
@@ -12,9 +10,9 @@ export function Drawer({ open, setOpen }) {
         ></div>
         <div className="drawer__content" direction="left">
           <h1 className="btn--float home xs-s">
-            <Link to={HOMEPAGE} className="">
+            <a href="/" className="">
               <i className="fas fa-home"></i>
-            </Link>
+            </a>
           </h1>
           <hr />
           {/* eslint-disable-next-line */}

@@ -1,12 +1,9 @@
-import { availableRoutes } from "./utility/routes";
+import Homepage from "./pages/homepage";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      
-      {availableRoutes}
+      <Homepage />
     </div>
   );
 }
-
-export default App;
