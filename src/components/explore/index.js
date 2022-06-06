@@ -1,6 +1,9 @@
 import "./explore.css";
 import { exploreData, aboutUsData } from "../../utility/constant";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./footer.css";
+import { HOMEPAGE } from "../../utility/routes";
 
 export function Explore() {
   const [data, setData] = useState([]);
@@ -55,6 +58,29 @@ export function Explore() {
             );
           })}
         </div>
+      </div>
+
+      {/* Footer */}
+      <div className="footer__ctr">
+        <section className="logo__details">
+          <img src="logo.png" alt="logo" />
+          <h1>&#169; 2022 New Renters</h1>
+          <h1>All rights reserved</h1>
+        </section>
+        <section className="links">
+          <Link to={HOMEPAGE} className="link">
+            Explore
+          </Link>
+          <Link to={HOMEPAGE} className="link">
+            About Us
+          </Link>
+          <Link to={HOMEPAGE} className="link">
+            Cities
+          </Link>
+          <Link to={HOMEPAGE} className="link call">
+            Call
+          </Link>
+        </section>
       </div>
     </div>
   );
