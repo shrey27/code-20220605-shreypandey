@@ -32,6 +32,21 @@ body {
   box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%),
     0 0 0 1px rgba(129, 113, 113, 0.02);
 }
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #ff7400;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  height: 100%;
+  width: fit-content;
+  background-color: var(--primary--light);
+}
 
 @media screen and (min-width: 1650px) {
   body {

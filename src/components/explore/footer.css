@@ -4,6 +4,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: column;
 }
 .logo__details {
   display: flex;
@@ -26,15 +27,22 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-direction: column;
 }
 .link {
   font-size: 1rem;
   font-weight: 500;
-  margin: 0 1rem;
+  margin: 1rem;
 }
 .link.call {
   border: 2px solid var(--black);
   padding: 0.5rem 1rem;
   border-radius: 5px;
   color: var(--black);
+}
+@media screen and (min-width: 768px) {
+  .footer__ctr,
+  .links {
+    flex-direction: row;
+  }
 }

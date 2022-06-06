@@ -2,6 +2,9 @@
 .explore {
   margin: 25rem auto 5rem;
 }
+.about {
+  margin: 10rem auto 5rem;
+}
 .explore__heading {
   font-size: 4rem;
   margin: 1rem 2rem;
@@ -71,12 +74,22 @@
   padding: 0.5rem;
   font-size: 1.125rem;
 }
+.emptyGif {
+  margin: 1rem auto;
+  height: auto;
+  width: 25rem;
+}
+.emptyGif img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
 @media screen and (min-width: 1024px) {
   .explore {
     margin-top: 15rem;
   }
   .about {
-    margin-top: 5rem;
+    margin-top: 15rem;
   }
   .explore__heading,
   .explore__para {

@@ -6,7 +6,7 @@ export const exploreData = [
     area: "Sq. 28m",
     photo: "single.jpeg",
     city: "Delhi",
-    dates: "January",
+    date: "January",
     guests: 1,
   },
   {
@@ -16,7 +16,7 @@ export const exploreData = [
     area: "Sq. 438m",
     photo: "penthouse.jpeg",
     city: "Mumbai",
-    dates: "January",
+    date: "January",
     guests: 8,
   },
   {
@@ -26,7 +26,7 @@ export const exploreData = [
     area: "Sq. 100m",
     photo: "3bhk.jpeg",
     city: "Kolkata",
-    dates: "April",
+    date: "April",
     guests: 3,
   },
   {
@@ -36,7 +36,7 @@ export const exploreData = [
     area: "Sq. 150m",
     photo: "duplex.jpeg",
     city: "Chennai",
-    dates: "March",
+    date: "March",
     guests: 2,
   },
 ];
@@ -67,3 +67,9 @@ export const aboutUsData = [
     image: "chapter4.jpeg",
   },
 ];
+
+export const defaultForm = {
+  city: "Select your city",
+  date: "Select a date",
+  guests: "Select guests",
+};

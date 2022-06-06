@@ -1,7 +1,12 @@
 import "./header.css";
 import { Navbar } from "../navbar/index";
 
-export function Header() {
+export function Header({ setForm, details, setDetails }) {
+  const handleFormSubmission = (e) => {
+    e.preventDefault();
+    setForm({ ...details });
+  };
+
   return (
     <div className="header">
       <img src="banner.jpg" alt="banner" className="banner" />
@@ -11,10 +16,13 @@ export function Header() {
         <h2 className="header__h2">Make your stay painless with us</h2>
       </div>
 
-      <form className="form">
+      <form className="form" onSubmit={handleFormSubmission}>
         <section>
           <h1>CITY</h1>
-          <select>
+          <select
+            onChange={(e) => setDetails({ ...details, city: e.target.value })}
+            value={details.city}
+          >
             <option>Select your city</option>
             <option>Delhi</option>
             <option>Mumbai</option>
@@ -24,7 +32,10 @@ export function Header() {
         </section>
         <section>
           <h1>DATES</h1>
-          <select>
+          <select
+            onChange={(e) => setDetails({ ...details, date: e.target.value })}
+            value={details.date}
+          >
             <option>Select a date</option>
             <option>January</option>
             <option>February</option>
@@ -34,7 +45,10 @@ export function Header() {
         </section>
         <section>
           <h1>GUESTS</h1>
-          <select>
+          <select
+            onChange={(e) => setDetails({ ...details, guests: e.target.value })}
+            value={details.guests}
+          >
             <option>Select guests</option>
             <option>2</option>
             <option>4</option>

@@ -20,19 +20,21 @@ export function Navbar() {
             <img className="box__image" src="logo.png" alt="logo" />
           </Link>
         </section>
-
+        {/* eslint-disable-next-line */}
         <section className="end">
           <section className="end__links">
-            <Link to={HOMEPAGE} className="end__link">
+            <a href="/#about" className="end__link">
               About Us
-            </Link>
-            <Link to={HOMEPAGE} className="end__link">
+            </a>
+            <a href="/#explore" className="end__link">
               Explore
-            </Link>
+            </a>
             <span className="end__link citites">
               Cities <i className="fa-solid fa-chevron-down"></i>
             </span>
-            <span className="end__link call"> Call</span>
+            <a href="/#call" className="end__link call">
+              Call
+            </a>
           </section>
           <span className="hamburger lg" onClick={handleClick}>
             <i className="fa-solid fa-bars"></i>

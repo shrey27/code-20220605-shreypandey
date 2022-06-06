@@ -17,14 +17,17 @@ export function Drawer({ open, setOpen }) {
             </Link>
           </h1>
           <hr />
+          {/* eslint-disable-next-line */}
           <section className="flex-st-ct flex-vertical">
-            <Link to={HOMEPAGE} className="drawer__links ">
+            <a href="/#about" className="drawer__links ">
               About Us
-            </Link>
-            <Link to={HOMEPAGE} className="drawer__links ">
+            </a>
+            <a href="/#explore" className="drawer__links ">
               Explore
-            </Link>
-            <span className="drawer__links ">Call</span>
+            </a>
+            <a href="/#call" className="drawer__links ">
+              Call
+            </a>
           </section>
           <hr />
         </div>
